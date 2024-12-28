@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #05443f;
+    padding: 20px;
+}
+
+header {
+background-color: #05443f;
+color: white;
+padding: 10px, 0;
+text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a :hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#skill ul {
+     list-style-type: square;
+     margin-left: 20px;
+     font-size: 18px;
+}
+
+#project table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#project th, #project td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#project th {
+    background-color: #05443f;
+    color: white;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px;
+    background-color: #05443f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#contact button a {
+    text-decoration: none;
+    color: white;
+}
+
+#contact button a :hover {
+    text-decoration: underline;
+} 
+
+#contact button :hover {
+    background-color: #555;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        padding: 10px;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+    }
+
+    #about p, #skill ul {
+        font-size: 16px;
+    } 
+
+    #project table {
+        font-size: 14px;
+    }
+
+    #contact input, #contact textarea {
+        font-size: 16px;
+    }
+}
